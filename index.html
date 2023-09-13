@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>私のウェブページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #50b3a2;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .footer-note {
+      font-size: 0.8em;
+      color: #333;
+      margin-top: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+      header, .container {
+        padding: 0.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>私のカレンダーとTwitterリスト</h1>
+  </header>
+
+  <div class="container">
+    <!-- Googleカレンダーの埋め込み -->
+    <iframe src="https://calendar.google.com/calendar/embed?src=1198c8c79fc18bb4ac80c17880135cbc741b2f42ec6deb78ce0ac8d039318464%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+    <!-- 注釈文言 -->
+    <div class="footer-note">
+      ※正確なスケジュールにつきましては、IDOLY公式アカウント及び各キャストのSNSをご確認ください
+    </div>
+    
+    <!-- Twitterのリストの埋め込み -->
+    <a class="twitter-timeline" href="https://twitter.com/mellco/lists/1675320871723081728?ref_src=twsrc%5Etfw">A Twitter List by mellco</a>
+  </div>
+
+  <!-- Twitterウィジェット用のJavaScript -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
