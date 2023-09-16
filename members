@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>317 - IDOLY Members</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">IDOLY Members</a></h1>
+  </header>
+
+  <main>
+    <div class="member" id="317">
+      <h2>317</h2>
+      <iframe src="https://calendar.google.com/calendar/embed?src=fmues1quvvqlt0efurrq378ol8%40group.calendar.google.com"></iframe>
+      <a class="twitter-timeline" href="https://twitter.com/317_IDOLY?ref_src=twsrc%5Etfw">Tweets by 317_IDOLY</a>
+    </div>
+    <!-- 以下に他のメンバーの情報を追加 -->
+  </main>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
