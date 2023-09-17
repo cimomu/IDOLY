@@ -42,6 +42,34 @@
       margin-bottom: 10px;
     }
 
+    /* Collapsible button styles */
+    .collapsible-button {
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      text-align: left;
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+
+    /* Collapsible content styles */
+    .collapsible-content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    /* 3列のグリッドレイアウト */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
     /* Media queries */
     @media only screen and (max-width: 600px) {
       header, .main-content {
@@ -57,6 +85,19 @@
   </header>
 
   <main class="main-content">
+    <!-- Collapsible Menu -->
+    <div class="collapsible-menu">
+      <button class="collapsible-button">キャスト一覧を見る</button>
+      <div class="collapsible-content">
+        <div class="grid-container">
+          <a href="#">317</a>
+          <a href="#">ayanot</a>
+          <a href="#">mam</a>
+          <!-- ...（他のキャスト） -->
+        </div>
+      </div>
+    </div>
+    
     <!-- Footer note -->
     <div class="footer-note">
       ※正確なスケジュールにつきましては、IDOLY公式アカウント及び各キャストのSNSをご確認ください。<br>
@@ -69,6 +110,21 @@
     <!-- Twitter List -->
     <a class="twitter-timeline" href="https://twitter.com/mellco/lists/1675320871723081728?ref_src=twsrc%5Etfw">A Twitter List by mellco</a>
   </main>
+
+  <!-- JavaScript for Collapsible -->
+  <script>
+    const collBtn = document.querySelector('.collapsible-button');
+    const collContent = document.querySelector('.collapsible-content');
+    
+    collBtn.addEventListener('click', () => {
+      collBtn.classList.toggle('active');
+      if (collContent.style.display === 'block') {
+        collContent.style.display = 'none';
+      } else {
+        collContent.style.display = 'block';
+      }
+    });
+  </script>
 
   <!-- Twitter Widget Script -->
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
