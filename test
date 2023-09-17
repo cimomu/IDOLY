@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>非公式IDOLYカレンダー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css"> <!-- CSSファイルをリンク -->
+</head>
+<body>
+  <header>
+    <h1>非公式IDOLYカレンダー</h1>
+  </header>
+
+  <div class="container">
+    <h2>キャスト一覧</h2>
+    <ul>
+      <li><a href="cast/cast1.html">キャスト1</a></li>
+      <li><a href="cast/cast2.html">キャスト2</a></li>
+      <li><a href="cast/cast3.html">キャスト3</a></li>
+      <!-- 以下、追加のキャスト -->
+    </ul>
+  </div>
+</body>
+</html>
