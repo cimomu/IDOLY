@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>非公式IDOLYカレンダー - ゆう</title>
+  <style>
+    /* Base styles */
+    body, header, .main-content {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #E4E4E4;
+    }
+
+    /* Header styles */
+    header {
+      color: #333;
+      text-align: center;
+      padding: 1em;
+    }
+
+    /* Container styles */
+    .main-content {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Google Calendar styles */
+    iframe.google-calendar {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+    /* Footer note styles */
+    .footer-note {
+      font-size: 0.8em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    /* Media queries */
+    @media only screen and (max-width: 600px) {
+      header, .main-content {
+        padding: 0.5em;
+      }
+    }
+
+    /* TOPに戻るリンクを右寄せにする */
+    .top-link {
+      text-align: right;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>非公式IDOLYカレンダー - ゆう</h1>
+  </header>
+
+  <main class="main-content">
+    <!-- キャストのプロフィール -->
+    <section class="profile">
+      
+      <!-- SNSリンク -->
+      <a href="https://twitter.com/yu_IDOLY">Twitter</a>
+     
+        <div class="top-link">
+               <a href="index.html">TOPに戻る</a>
+        </div>
+    </section>
+  
+    <!-- キャストの出勤スケジュール -->
+    <section class="schedule">
+      <h2>出勤スケジュール</h2>
+      <iframe class="google-calendar" src="https://calendar.google.com/calendar/embed?src=1jee2qefr7i2h83v52pn4ucu2k@group.calendar.google.com"></iframe>
+    </section>
+
+      <a class="twitter-timeline" href="https://twitter.com/yu_IDOLY?ref_src=twsrc%5Etfw">Tweets by yu_IDOLY</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </main>
+
+</body>
+</html>
