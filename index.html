@@ -5,39 +5,8 @@
   <title>非公式IDOLYカレンダー</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="非公式IDOLYカレンダーのウェブページ">
-  <style>
-    body, header, .container {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #E4E4E4;
-    }
-    header {
-      color: #333;
-      text-align: center;
-      padding: 1em;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    iframe.google-calendar {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
-    .footer-note {
-      font-size: 0.8em;
-      color: #333;
-      margin-bottom: 10px;
-    }
-    @media only screen and (max-width: 600px) {
-      header, .container {
-        padding: 0.5em;
-      }
-    }
-  </style>
+  <!-- 外部CSSファイルをリンク -->
+  <link rel="stylesheet" href="https://github.com/cimomu/IDOLY/blob/main/styles.css">
 </head>
 <body>
 
@@ -45,21 +14,21 @@
     <h1>非公式IDOLYカレンダー</h1>
   </header>
 
-  <div class="container">
-    <!-- 注釈文言 -->
+  <main class="main-content">
+    <!-- Footer note -->
     <div class="footer-note">
       ※正確なスケジュールにつきましては、IDOLY公式アカウント及び各キャストのSNSをご確認ください。<br>
       カレンダー右下の+ボタンでお使いのカレンダーアプリに追加できます。
     </div>
 
-    <!-- Googleカレンダーの埋め込み -->
+    <!-- Google Calendar -->
     <iframe class="google-calendar" src="https://calendar.google.com/calendar/embed?src=1198c8c79fc18bb4ac80c17880135cbc741b2f42ec6deb78ce0ac8d039318464%40group.calendar.google.com&ctz=Asia%2FTokyo&showTitle=0"></iframe>
 
-    <!-- Twitterのリストの埋め込み -->
+    <!-- Twitter List -->
     <a class="twitter-timeline" href="https://twitter.com/mellco/lists/1675320871723081728?ref_src=twsrc%5Etfw">A Twitter List by mellco</a>
-  </div>
+  </main>
 
-  <!-- Twitterウィジェット用のJavaScript -->
+  <!-- Twitter Widget Script -->
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
