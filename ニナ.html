@@ -51,7 +51,20 @@
     .top-link {
       text-align: right;
     }
+/* SNSとMBTIのスタイル */
+.profile-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.profile-links a,
+.mbti {
+    margin-right: 20px; /* これは好みに応じて調整できます */
+}
+
+
+    
   </style>
 </head>
 <body>
@@ -65,8 +78,10 @@
     <section class="profile">
       
       <!-- SNSリンク -->
+      <div class="profile-links">
       <a href="https://twitter.com/nina_IDOLY">Twitter</a>
-     
+         <span class="mbti">MBTI:INTJ and ISTJ</span>
+</div>
         <div class="top-link">
                <a href="index.html">TOPに戻る</a>
         </div>
